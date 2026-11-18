@@ -313,6 +313,12 @@ mark,.hl > span{background:var(--gold);color:inherit;border-radius:.16em;padding
 #marca .trac{stroke-dasharray:none}
 #marca .guia{stroke-width:1.6;opacity:.8}
 .hero h1{font-size:clamp(32px,3.9vw,56px)}
+/* botões com texto branco */
+.h-data,.of-data{display:flex;width:min(100%,460px);padding:18px 24px}
+.of-data-turma{margin:0 0 22px}
+.btn.ouro{--grad-btn:linear-gradient(100deg,#B08640 0%,#8F6727 45%,#A57A34 75%,#C49A50 100%);background:var(--grad-btn);background-size:220% 100%;color:#fff;text-shadow:0 1px 1px rgba(60,40,10,.35)}
+.btn.ouro:hover{background:var(--grad-btn);background-size:220% 100%}
+.btn.ouro svg{fill:#fff}
 </style>
 <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__motionOk)document.documentElement.classList.remove('js')},3500)</script>
 <!-- Meta Pixel Code -->
@@ -344,9 +350,10 @@ src="https://www.facebook.com/tr?id=729537770186252&ev=PageView&noscript=1"
       <span class="kicker" data-r>Mentoria prática de harmonização facial</span>
       <h1 class="split">Seja <mark>referência</mark> e ganhe confiança em harmonização facial</h1>
       <p data-r>Uma mentoria pra você aplicar com segurança, ler a simetria e a proporção de cada rosto e entregar o resultado que faz a paciente voltar e indicar. Tudo em paciente de verdade, com a gente do lado.</p>
+      <div class="h-data" data-r><b>Próxima turma: 21 e 22 de novembro</b><span>Florianópolis, com prática em pacientes reais</span></div>
       <div data-r>
         <a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero saber da mentoria</a>
-        <div class="sub-cta">A gente te passa as datas da próxima turma e como funciona.</div>
+        <div class="sub-cta">Chama no WhatsApp pra garantir a sua vaga e saber o investimento.</div>
       </div>
       <div class="assina" data-r>Dra. Mariane Botti e Dr. Loan Tomiello</div>
     </div>
@@ -364,6 +371,16 @@ src="https://www.facebook.com/tr?id=729537770186252&ev=PageView&noscript=1"
       <div data-r><a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero saber da mentoria</a></div>
     </div>
   </div>
+</section>
+
+<section class="sec depo">
+  <div class="wrap">
+    <span class="kicker" data-r>Quem já fez a mentoria</span>
+    <h2 class="split h2m">Ouça de quem já passou por aqui</h2>
+  </div>
+  <div class="deps" id="deps" data-r><div class="dep"><video src="video/dep1.mp4" poster="video/dep1.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><div class="dep"><video src="video/dep2.mp4" poster="video/dep2.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><div class="dep"><video src="video/dep3.mp4" poster="video/dep3.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 3"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div></div>
+  <div class="deps-pts" id="depsPts" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+  <div class="meio-cta" data-r><a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero saber da mentoria</a><div class="sub-cta">Você fala direto com a nossa equipe no WhatsApp.</div></div>
 </section>
 
 <section class="story escuro">
@@ -428,16 +445,6 @@ src="https://www.facebook.com/tr?id=729537770186252&ev=PageView&noscript=1"
   </div>
 </section>
 
-<section class="sec depo">
-  <div class="wrap">
-    <span class="kicker" data-r>Quem já fez a mentoria</span>
-    <h2 class="split h2m">Ouça de quem já passou por aqui</h2>
-  </div>
-  <div class="deps" id="deps" data-r><div class="dep"><video src="video/dep1.mp4" poster="video/dep1.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><div class="dep"><video src="video/dep2.mp4" poster="video/dep2.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><div class="dep"><video src="video/dep3.mp4" poster="video/dep3.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 3"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div></div>
-  <div class="deps-pts" id="depsPts" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
-  <div class="meio-cta" data-r><a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero saber da mentoria</a><div class="sub-cta">Você fala direto com a nossa equipe no WhatsApp.</div></div>
-</section>
-
 <section class="sec">
   <div class="wrap ment">
     <div class="duo">
@@ -461,8 +468,9 @@ src="https://www.facebook.com/tr?id=729537770186252&ev=PageView&noscript=1"
     <div class="oferta" data-r>
       <div class="of-esq">
         <span class="selo">Próxima turma</span>
+        <div class="of-data of-data-turma"><b>21 e 22 de novembro</b><span>Florianópolis, com prática em pacientes reais</span></div>
         <h2 class="split">Venha aplicar com a gente do lado e fazer o resultado que <mark>vira indicação</mark></h2>
-        <p class="of-p">Chama a gente no WhatsApp que a gente te passa as datas, o investimento e como são os dias de prática.</p>
+        <p class="of-p">Chama a gente no WhatsApp que a gente te passa o investimento e como são os dias de prática.</p>
         <a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero saber da mentoria</a>
         <div class="sub-cta">Sem compromisso. Você tira as suas dúvidas antes de decidir.</div>
       </div>
