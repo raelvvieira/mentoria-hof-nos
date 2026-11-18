@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webinário gratuito de Harmonização Facial | Dra. Mariane Botti e Dr. Loan Tomiello</title>
+<meta name="description" content="Webinário gratuito e ao vivo, dias 18 e 19/11 às 20h, para profissionais que fazem harmonização facial. Análise de casos reais e apresentação da mentoria com a Dra. Mariane Botti e o Dr. Loan Tomiello.">
+<meta property="og:title" content="Webinário gratuito: a técnica certa pra se tornar referência em harmonização facial">
+<meta property="og:description" content="Ao vivo, dias 18 e 19/11 às 20h. O link da aula sai no grupo do WhatsApp.">
+<meta property="og:image" content="img/editorial.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="img/logo-nos.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#F6F6F4;--ink:#111;--mut:#77756F;--line:#E8E7E3;--gold:#F3E8CC;--wa:#1FAF5A;--r:14px;--pad:clamp(20px,5vw,64px);--max:1040px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:Onest,system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2{font-weight:500;letter-spacing:-.04em;line-height:1.04}
+.mut{color:var(--mut)}
+.label{font-size:14px;color:var(--mut);display:block;margin-bottom:18px}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:999px;font-weight:500;font-size:16px;background:var(--ink);color:#fff;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .3s}
+.btn:hover{transform:translateY(-2px);background:#000}
+.btn svg{width:20px;height:20px;fill:#5BE38E;flex:0 0 20px}
+.sub-cta{margin-top:16px;font-size:14px;color:var(--mut)}
+
+.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.top.scrolled{background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:center;height:60px}
+.top-t{font-size:15px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+
+/* abertura */
+.hero{min-height:100svh;display:flex;align-items:center;text-align:center;padding:110px 0 70px}
+.hero h1{font-size:clamp(34px,5.2vw,74px);max-width:15.5em;margin:0 auto}
+mark,.hl > span{background:var(--gold);color:inherit;border-radius:.16em;padding:0 .16em}
+.hl{white-space:nowrap}
+.hero p{font-size:clamp(17px,1.5vw,20px);color:var(--mut);max-width:33em;margin:28px auto 34px}
+.quem{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:44px}
+.quem span{font-size:13px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--mut)}
+
+/* narrativa */
+.story{padding:clamp(70px,10vw,140px) 0}
+.story p{font-size:clamp(26px,3.9vw,52px);font-weight:500;letter-spacing:-.035em;line-height:1.16;max-width:19em}
+.story p + p{margin-top:clamp(40px,6vw,80px)}
+.story .w{opacity:.13}
+.story .w.g{background:var(--gold);border-radius:.1em;padding:0 .15em;margin:0 -.15em}
+
+/* virada */
+.turn{background:var(--soft);padding:clamp(80px,11vw,150px) 0;text-align:center}
+.turn h2{font-size:clamp(34px,5.6vw,76px);max-width:12em;margin:0 auto}
+.turn p{font-size:clamp(17px,1.5vw,20px);color:var(--mut);max-width:31em;margin:26px auto 0}
+
+/* prática */
+.sec{padding:clamp(80px,11vw,150px) 0}
+.proc{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.vid{position:relative;width:min(360px,34vw);aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;background:var(--soft)}
+.vid video{width:100%;height:100%;object-fit:cover}
+#vidSom{position:absolute;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:999px;background:#fff;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.18)}
+#vidSom .on{display:none}
+#vidSom.ligado .on{display:block}
+#vidSom.ligado .off{display:none}
+.proc h2{font-size:clamp(32px,4.6vw,58px)}
+.lista{margin-top:34px}
+.lista div{padding:18px 0;border-top:1px solid var(--line)}
+.lista div:last-child{border-bottom:1px solid var(--line)}
+.lista p{font-size:clamp(18px,1.6vw,21px);font-weight:500;letter-spacing:-.02em;line-height:1.25}
+
+/* mentores */
+.ment{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:center}
+.portrait{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.portrait img{width:100%;height:112%;object-fit:cover;object-position:50% 20%}
+.ment h2{font-size:clamp(32px,4.6vw,58px)}
+.ment p{font-size:19px;color:var(--mut);max-width:30em;margin:22px 0 28px}
+.igs{display:flex;gap:26px;flex-wrap:wrap}
+.link{font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
+
+/* grupo */
+.grupo{text-align:center;padding:clamp(90px,12vw,170px) 0}
+.grupo h2{font-size:clamp(38px,6.4vw,92px);max-width:11em;margin:0 auto}
+.tres{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:34px auto 38px;max-width:44em}
+.tres span{font-size:clamp(16px,1.5vw,19px);font-weight:500;letter-spacing:-.01em;padding:12px 20px;border-radius:999px;background:var(--soft)}
+
+.foot{font-size:13px;color:var(--mut);padding:44px 0 100px;border-top:1px solid var(--line);text-align:center}
+.foot img{height:70px;width:auto;margin:0 auto 22px}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;border-radius:999px;padding:14px 20px 14px 16px;font-weight:500;font-size:15px;box-shadow:0 12px 30px -10px rgba(31,175,90,.6);transform:translateY(150%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.fab.show{transform:none}
+.fab svg{width:23px;height:23px;fill:#fff}
+
+.js [data-r]{opacity:0;transform:translateY(30px)}
+.js .split .ln{display:inline-block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em;vertical-align:top}
+.js .split .ln > span{display:inline-block;transform:translateY(112%)}
+.js [data-clip]{clip-path:inset(100% 0 0 0 round 14px)}
+
+@media (max-width:860px){
+  .proc,.ment{grid-template-columns:1fr}
+  .vid{width:min(100%,340px);margin:0 auto}
+  .hero{padding-top:96px}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .fab .t{display:none}.fab{padding:15px}
+  .top-t{font-size:12px;letter-spacing:.1em;white-space:nowrap}
+  .btn{padding:17px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  .js [data-r],.js .split .ln > span{opacity:1!important;transform:none!important}
+  .js [data-clip]{clip-path:none!important}
+  .story .w{opacity:1}
+}
+
+/* ===== camada premium ===== */
+:root{--ouro:#B89A5E;--noite:#100F0D;--creme:#F4EFE6}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);margin-bottom:22px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--ouro)}
+.h2m{font-size:clamp(32px,4.6vw,58px)}
+.hero{text-align:left;padding:120px 0 80px}
+.hero-g{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,80px);align-items:center;max-width:1180px}
+.hero h1{font-size:clamp(32px,3.9vw,56px);max-width:none;margin:0}
+.hero p{margin:26px 0 32px;max-width:31em}
+.assina{margin-top:38px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--mut);letter-spacing:.02em}
+.rosto{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden}
+.rosto img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;mix-blend-mode:multiply}
+.rosto .dot{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px rgba(17,17,17,.3),0 1px 6px rgba(0,0,0,.25)}
+.rosto .dot::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid #fff;animation:pulso 2.6s ease-out infinite;animation-delay:var(--d,0s)}
+@keyframes pulso{0%{transform:scale(.5);opacity:.95}80%,100%{transform:scale(1.5);opacity:0}}
+
+.story{background:var(--noite);color:var(--creme)}
+.story p{max-width:20em}
+.story .w.g{background:none;color:#E2C88F;padding:0;margin:0}
+.story p.fim{font-size:clamp(20px,2.3vw,30px);font-weight:400;letter-spacing:-.02em;color:rgba(244,239,230,.75);max-width:26em}
+.turn{background:var(--creme)}
+
+.ganhos{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px);margin-top:54px}
+.ganhos > div{border-top:1px solid var(--ouro);padding-top:22px}
+.ganhos b{display:block;font-weight:500;font-size:13px;letter-spacing:.14em;color:var(--ouro);margin-bottom:26px}
+.ganhos h3{font-size:clamp(21px,2vw,26px);font-weight:500;letter-spacing:-.025em;line-height:1.15}
+.ganhos p{color:var(--mut);margin-top:12px;font-size:16px}
+
+.grupo{background:var(--noite);color:var(--creme)}
+.grupo mark,.grupo .hl > span{background:none;color:#E2C88F;padding:0}
+.tres span{background:rgba(244,239,230,.08);color:var(--creme)}
+.btn.claro{background:var(--creme);color:var(--ink)}
+.btn.claro svg{fill:var(--wa)}
+.btn.claro:hover{background:#fff}
+.grupo .sub-cta{color:rgba(244,239,230,.55)}
+.foot{border-top:0}
+
+@media (max-width:860px){
+  .hero-g,.ganhos{grid-template-columns:1fr}
+  .rosto{aspect-ratio:1/1;max-width:420px;margin:0 auto;width:100%}
+  .hero{padding-top:92px}
+}
+
+/* ===== camada dourada ===== */
+:root{--g1:#F7E9B8;--g2:#E3C277;--g3:#B98C3C;--grad:linear-gradient(100deg,#F7E9B8 0%,#E6C77E 38%,#C99A47 72%,#EBD08F 100%)}
+.kicker{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker::before{background:linear-gradient(90deg,transparent,var(--g3))}
+.sec .kicker,.hero .kicker{background-image:linear-gradient(100deg,#B98C3C,#D9B25F 60%,#B98C3C)}
+.escuro .kicker{background-image:var(--grad)}
+
+/* destaque da headline: faixa em degradê dourado */
+.hero mark,.hero .hl > span{background:linear-gradient(100deg,#FBF1CC 0%,#F0D58E 55%,#E2BD6A 100%);box-shadow:0 6px 22px -10px rgba(201,154,71,.7)}
+.rosto::before{content:"";position:absolute;inset:8% 4% 4% 8%;border-radius:50%;background:radial-gradient(closest-side,rgba(240,213,142,.5),rgba(240,213,142,0) 70%);filter:blur(10px);z-index:0}
+.rosto img{position:relative;z-index:1}
+.rosto .dot{z-index:2;background:#FFF6DA;box-shadow:0 0 0 1px rgba(185,140,60,.7),0 0 14px 2px rgba(240,213,142,.85)}
+.rosto .dot::after{border-color:#F0D58E}
+
+/* botão dourado */
+.btn.ouro{background:var(--grad);background-size:220% 100%;color:#1A1508;box-shadow:0 14px 34px -14px rgba(201,154,71,.85);animation:brilho 6s ease-in-out infinite}
+.btn.ouro:hover{background:var(--grad);background-size:220% 100%;filter:brightness(1.05)}
+.btn.ouro svg{fill:#1A1508}
+@keyframes brilho{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* fundos escuros com luz dourada suave */
+.escuro{position:relative;background:#0D0C0A;color:var(--creme);overflow:hidden;isolation:isolate}
+.escuro::before,.escuro::after{content:"";position:absolute;z-index:-1;border-radius:50%;pointer-events:none;filter:blur(70px);will-change:transform}
+.escuro::before{width:60vw;height:60vw;max-width:820px;max-height:820px;left:-18vw;top:-22vw;background:radial-gradient(closest-side,rgba(227,194,119,.24),rgba(227,194,119,0));animation:deriva 16s ease-in-out infinite alternate}
+.escuro::after{width:50vw;height:50vw;max-width:680px;max-height:680px;right:-16vw;bottom:-20vw;background:radial-gradient(closest-side,rgba(185,140,60,.22),rgba(185,140,60,0));animation:deriva 20s ease-in-out infinite alternate-reverse}
+@keyframes deriva{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(9vw,6vw,0) scale(1.18)}}
+.escuro > .wrap{position:relative}
+.escuro > .wrap::before{content:"";position:absolute;left:var(--pad);right:var(--pad);top:calc(-1 * clamp(40px,6vw,80px));height:1px;background:linear-gradient(90deg,transparent,rgba(227,194,119,.55),transparent)}
+.story.escuro{background:#0D0C0A}
+.story .w.g,.grupo mark,.grupo .hl > span,.escuro .hl > span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0;margin:0;box-shadow:none}
+.escuro h2{color:var(--creme)}
+.escuro .ganhos > div{border-top:1px solid transparent;border-image:linear-gradient(90deg,var(--g2),rgba(227,194,119,0)) 1}
+.escuro .ganhos b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.escuro .ganhos p{color:rgba(244,239,230,.62)}
+.grupo.escuro{background:#0D0C0A}
+
+/* o que você vai dominar */
+.dom{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:54px;background:linear-gradient(135deg,#EAD9A8,#E8E7E3 40%,#EAD9A8);border-radius:var(--r);overflow:hidden;border:1px solid #EADFC2}
+.dom > div{background:#fff;padding:30px 28px 34px;transition:background .4s}
+.dom > div:hover{background:#FFFBEF}
+.dom h3{font-size:clamp(19px,1.8vw,23px);font-weight:500;letter-spacing:-.025em;line-height:1.15}
+.dom h3::before{content:"";display:block;width:26px;height:2px;margin-bottom:20px;background:linear-gradient(90deg,var(--g3),var(--g1))}
+.dom p{color:var(--mut);margin-top:10px;font-size:16px}
+.turn{background:linear-gradient(180deg,#FBF6E6,#F4EFE6)}
+.ganhos > div{border-top:1px solid var(--g3)}
+
+@media (max-width:860px){.dom{grid-template-columns:1fr}}
+@media (min-width:861px) and (max-width:1080px){.dom{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){.escuro::before,.escuro::after,.btn.ouro{animation:none}}
+
+/* ===== marcação com caneta ===== */
+.rosto{aspect-ratio:4/5;overflow:visible}
+.rosto img{object-position:50% 50%;border-radius:var(--r)}
+.rosto .dot{display:none}
+#marca{position:absolute;inset:0;width:100%;height:100%;z-index:2;overflow:visible}
+#marca .tr{fill:none;stroke:#fff;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
+#marca .pt{fill:#fff;opacity:.95}
+.rosto::before{inset:4% -4% 10% -4%}
+@media (max-width:860px){.rosto{aspect-ratio:4/5;max-width:440px}}
+
+/* ===== abertura editorial ===== */
+.rosto.ed{aspect-ratio:4/5;border-radius:var(--r);overflow:visible}
+.rosto.ed::before{display:none}
+.rosto.ed img{mix-blend-mode:normal;border-radius:var(--r);object-position:50% 50%;box-shadow:0 40px 80px -40px rgba(120,90,40,.45)}
+.rosto.ed #marca{border-radius:var(--r);overflow:hidden}
+#marca .tr{stroke-width:6.5}
+#marca .ponta{stroke-width:6.5}
+#marca .trac{fill:none;stroke:#fff;stroke-width:6.5;stroke-linecap:round;stroke-dasharray:20 17;opacity:.95}
+#marca .guia{stroke-width:2;opacity:.9}
+#marca .pt{fill:#fff}
+.etq{position:absolute;z-index:3;font-size:13px;font-weight:500;letter-spacing:.01em;white-space:nowrap;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.86);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink);border:1px solid rgba(255,255,255,.9);box-shadow:0 8px 22px -12px rgba(0,0,0,.45)}
+.etq.e{translate:-78% -50%}
+.etq.d{translate:-12% -50%}
+@media (max-width:860px){.etq{font-size:11px;padding:5px 10px}.etq.e{translate:-45% -50%}.etq.d{translate:-45% -50%}.rosto.ed{max-width:460px}}
+
+/* ===== card do webinário ===== */
+.grupo{text-align:left;padding:clamp(80px,10vw,140px) 0}
+.grupo .wrap{max-width:1180px}
+.oferta{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);padding:clamp(28px,4.5vw,64px);border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.oferta::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(247,233,184,.9),rgba(185,140,60,.15) 38%,rgba(185,140,60,.1) 62%,rgba(227,194,119,.75));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.selo{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px;border-radius:999px;background:rgba(227,194,119,.12);color:#EBD08F;border:1px solid rgba(227,194,119,.35);margin-bottom:26px}
+.selo::before{content:"";width:7px;height:7px;border-radius:50%;background:#EBD08F;box-shadow:0 0 0 0 rgba(235,208,143,.7);animation:aovivo 2s infinite}
+@keyframes aovivo{70%{box-shadow:0 0 0 9px rgba(235,208,143,0)}100%{box-shadow:0 0 0 0 rgba(235,208,143,0)}}
+.grupo h2{font-size:clamp(28px,3.5vw,48px);max-width:none;margin:0;line-height:1.08}
+.of-data{margin-top:26px;padding:16px 20px;border-radius:14px;background:rgba(227,194,119,.09);border:1px solid rgba(227,194,119,.28);display:inline-flex;flex-direction:column;gap:2px}
+.of-data b{font-weight:500;font-size:clamp(20px,2.1vw,26px);letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.of-data span{font-size:14px;color:rgba(244,239,230,.62)}
+.of-p{color:rgba(244,239,230,.68);font-size:18px;margin:22px 0 30px;max-width:26em}
+.grupo .sub-cta{margin-top:14px}
+.of-t{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,239,230,.5);margin-bottom:8px}
+.of-l{list-style:none;counter-reset:of}
+.of-l li{counter-increment:of;position:relative;padding:18px 0 18px 46px;border-bottom:1px solid rgba(244,239,230,.1);color:rgba(244,239,230,.7);font-size:17px;line-height:1.4}
+.of-l li::before{content:counter(of,decimal-leading-zero);position:absolute;left:0;top:20px;font-size:13px;font-weight:500;letter-spacing:.08em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.of-l b{font-weight:500;color:var(--creme)}
+.of-fim{margin-top:20px;font-size:15px;color:rgba(244,239,230,.55)}
+@media (max-width:860px){.oferta{grid-template-columns:1fr;border-radius:20px}.of-l li{font-size:16px;padding-left:40px}}
+
+/* ===== depoimentos em vídeo ===== */
+.depo .wrap{text-align:center}
+.depo h2{margin-left:auto;margin-right:auto}
+.deps{display:flex;gap:clamp(14px,2vw,26px);justify-content:center;margin-top:clamp(36px,5vw,60px);padding:0 var(--pad)}
+.dep{position:relative;flex:0 0 auto;width:min(320px,28vw);aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;background:#111;box-shadow:0 30px 60px -34px rgba(120,90,40,.55)}
+.dep video{width:100%;height:100%;object-fit:cover;display:block;cursor:pointer}
+.som{position:absolute;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:999px;background:#fff;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.som .on{display:none}
+.som.ligado{background:var(--grad)}
+.som.ligado .on{display:block}
+.som.ligado .off{display:none}
+.deps-pts{display:none}
+@media (max-width:860px){
+  .deps{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 14vw 6px;gap:12px}
+  .deps::-webkit-scrollbar{display:none}
+  .dep{width:72vw;max-width:340px;scroll-snap-align:center}
+  .deps-pts{display:flex;justify-content:center;gap:7px;margin-top:18px}
+  .deps-pts i{width:7px;height:7px;border-radius:50%;background:#D9D4C7;transition:all .3s}
+  .deps-pts i.on{width:22px;border-radius:99px;background:var(--g3)}
+}
+
+/* ===== vídeo de apresentação ===== */
+.vsl{padding-top:clamp(20px,4vw,60px)}
+.vsl-g{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.vsl .dep{width:min(340px,30vw)}
+.vsl p{color:var(--mut);font-size:19px;max-width:24em;margin:20px 0 30px}
+@media (max-width:860px){.vsl-g{grid-template-columns:1fr;text-align:center}.vsl .dep{width:min(100%,330px);margin:0 auto;order:2}.vsl-g > div:last-child{order:1}.vsl p{margin-left:auto;margin-right:auto}.vsl .kicker{justify-content:center}}
+
+/* ===== técnica com o caso em vídeo ===== */
+.tec{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,56px);align-items:start;margin-top:54px}
+.tec .dep{width:min(330px,28vw)}
+.tec-l{display:block;margin-top:14px;font-size:14px;color:var(--mut);text-align:center}
+.tec .dom{margin-top:0;grid-template-columns:1fr 1fr}
+@media (max-width:860px){.tec{grid-template-columns:1fr}.tec .dep{width:min(100%,330px);margin:0 auto}.tec .dom{grid-template-columns:1fr}}
+.semvid{max-width:860px}
+.semvid h2{font-size:clamp(32px,4.6vw,58px)}
+.ment{grid-template-columns:1.1fr .9fr}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.6vw,20px)}
+.duo figure{margin:0}
+.duo figure:last-child{margin-top:clamp(20px,4vw,56px)}
+.duo figcaption{margin-top:12px;font-size:14px;color:var(--mut)}
+@media (max-width:860px){.ment{grid-template-columns:1fr}}
+/* ===== abertura do webinário ===== */
+.selo.claro{background:#FBF3DA;color:#8A6520;border-color:#E6CF95;margin-bottom:22px}
+.selo.claro::before{background:#B98C3C;box-shadow:0 0 0 0 rgba(185,140,60,.6);animation:aovivo2 2s infinite}
+@keyframes aovivo2{70%{box-shadow:0 0 0 9px rgba(185,140,60,0)}100%{box-shadow:0 0 0 0 rgba(185,140,60,0)}}
+.hero h1{font-size:clamp(30px,3.5vw,50px)}
+.hero p{margin-bottom:22px}
+.h-data{display:inline-flex;flex-direction:column;gap:2px;padding:14px 20px;border-radius:14px;background:#FBF6E6;border:1px solid #EADFC2;margin-bottom:28px}
+.h-data b{font-weight:500;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.02em;color:#8A6520}
+.h-data span{font-size:14px;color:var(--mut)}
+.meio-cta{text-align:center;margin-top:clamp(34px,5vw,56px);padding:0 var(--pad)}
+</style>
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__motionOk)document.documentElement.classList.remove('js')},3500)</script>
+</head>
+<body>
+
+<header class="top" id="top"><div class="wrap"><span class="top-t">Webinário gratuito · Harmonização Facial</span></div></header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-g">
+    <div>
+      <span class="selo claro" data-r>Webinário gratuito e ao vivo</span>
+      <h1 class="split">Aplique a técnica certa pra se tornar <mark>referência</mark> e ganhar confiança em harmonização facial</h1>
+      <p data-r>Conheça os métodos que te permitem ler a simetria e a proporção de cada rosto e entregar o resultado que faz a paciente voltar e indicar. Com análise de casos reais e a apresentação da nossa mentoria aceleradora.</p>
+      <div class="h-data" data-r><b>18 e 19 de novembro</b><span>quarta e quinta, às 20h, ao vivo</span></div>
+      <div data-r>
+        <a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero participar do webinário</a>
+        <div class="sub-cta">É gratuito. O link da aula sai no grupo do WhatsApp.</div>
+      </div>
+      <div class="assina" data-r>Com Dra. Mariane Botti e Dr. Loan Tomiello</div>
+    </div>
+    <div class="rosto ed" id="rosto" data-r><img src="img/editorial.jpg" alt="Modelo com as marcações de análise facial da harmonização" width="1024" height="1280"><svg id="marca" viewBox="0 40 1024 1280" aria-hidden="true"></svg></div>
+  </div>
+</section>
+
+<section class="sec vsl">
+  <div class="wrap vsl-g">
+    <div class="dep" data-r><video src="video/vsl.mp4" poster="video/vsl.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do vídeo"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div>
+    <div>
+      <span class="kicker" data-r>Assista antes de continuar</span>
+      <h2 class="split h2m">Conheça a mentoria em 1 minuto</h2>
+      <p data-r>No webinário a gente abre tudo isso ao vivo, com caso real e espaço pra sua pergunta.</p>
+      <div data-r><a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero participar do webinário</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="story escuro">
+  <div class="wrap">
+    <span class="kicker" data-r>O próximo nível</span>
+    <p class="words">Você já aplica. Já tem paciente, já tem resultado pra mostrar. [Agora é hora de subir de nível.]</p>
+    <p class="words">Quem se destaca na harmonização enxerga o rosto inteiro antes de pegar a seringa. Lê simetria, proporção e os terços da face, e [sabe o que cada ponto vai entregar.]</p>
+    <p class="words">É esse olhar que faz a paciente confiar no plano completo, voltar pra próxima etapa e [falar o seu nome pras amigas.]</p>
+    <p class="words fim">E esse olhar se treina, com paciente na cadeira e alguém experiente do lado.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="kicker" data-r>O que você vai dominar</span>
+    <h2 class="split h2m">A técnica por trás de um resultado que chama atenção</h2>
+    <div class="tec">
+    <div class="tec-v" data-r><div class="dep"><video src="video/caso.mp4" poster="video/caso.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do vídeo"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><span class="tec-l">Um caso acontecendo, em tempo real</span></div>
+    <div class="dom">
+      <div data-r><h3>Análise facial</h3><p>Simetria, proporção e os terços da face, pra enxergar o que o rosto pede.</p></div>
+      <div data-r><h3>Planejamento full face</h3><p>O plano completo do rosto, montado por prioridade.</p></div>
+      <div data-r><h3>Planos de aplicação</h3><p>A profundidade certa pra cada região e cada produto.</p></div>
+      <div data-r><h3>Agulha e cânula</h3><p>Quando usar cada uma, e por quê.</p></div>
+      <div data-r><h3>Anatomia aplicada</h3><p>As zonas de risco do rosto, pra aplicar com tranquilidade.</p></div>
+      <div data-r><h3>Preenchimento, toxina e bioestimulador</h3><p>Do lábio ao caso completo, com a sua mão.</p></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="turn">
+  <div class="wrap">
+    <h2 class="split">Segurança a gente ganha aplicando</h2>
+    <p data-r>Por isso aqui você fica com a seringa na mão e a paciente na cadeira, e a gente fica do lado olhando e dizendo “vai, é aí mesmo”.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap semvid">
+    <div>
+      <span class="kicker" data-r>Como é a mentoria</span>
+      <h2 class="split h2m">Aqui quem aplica é você</h2>
+      <div class="lista">
+        <div data-r><p>Você avalia o rosto e monta o plano.</p></div>
+        <div data-r><p>A gente olha junto antes de qualquer agulha.</p></div>
+        <div data-r><p>Você aplica, e a gente fica do lado do começo ao fim.</p></div>
+        <div data-r><p>Você sai com mais casos feitos pela sua mão.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec escuro">
+  <div class="wrap">
+    <span class="kicker" data-r>O que muda pra você</span>
+    <h2 class="split h2m">Capacitação que aparece na agenda e no faturamento</h2>
+    <div class="ganhos">
+      <div data-r><b>01</b><h3>Você indica o plano completo</h3><p>E entrega, porque domina cada etapa dele.</p></div>
+      <div data-r><b>02</b><h3>A paciente confia, volta e indica</h3><p>Resultado bonito e seguro é o que mais traz paciente nova.</p></div>
+      <div data-r><b>03</b><h3>O faturamento acompanha</h3><p>Harmonização é dos procedimentos de maior valor do consultório. Um full face a mais por semana já muda o seu mês.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec depo">
+  <div class="wrap">
+    <span class="kicker" data-r>Quem já fez a mentoria</span>
+    <h2 class="split h2m">Ouça de quem já passou por aqui</h2>
+  </div>
+  <div class="deps" id="deps" data-r><div class="dep"><video src="video/dep1.mp4" poster="video/dep1.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><div class="dep"><video src="video/dep2.mp4" poster="video/dep2.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div><div class="dep"><video src="video/dep3.mp4" poster="video/dep3.jpg" muted loop playsinline preload="metadata"></video><button class="som" type="button" aria-label="Ativar o som do depoimento 3"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="off" d="m16 9 5 6m0-6-5 6"/></svg><span>Ativar som</span></button></div></div>
+  <div class="deps-pts" id="depsPts" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+  <div class="meio-cta" data-r><a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero participar do webinário</a><div class="sub-cta">Gratuito e ao vivo, dias 18 e 19/11 às 20h.</div></div>
+</section>
+
+<section class="sec">
+  <div class="wrap ment">
+    <div class="duo">
+      <figure><div class="portrait" data-clip><img src="img/dra-mariane.jpg" alt="Dra. Mariane Botti" data-par="7"></div><figcaption data-r>Dra. Mariane Botti</figcaption></figure>
+      <figure><div class="portrait" data-clip><img src="img/dr-loan.jpg?v=2" alt="Dr. Loan Tomiello" data-par="7"></div><figcaption data-r>Dr. Loan Tomiello</figcaption></figure>
+    </div>
+    <div>
+      <span class="kicker" data-r>Quem vai estar do seu lado</span>
+      <h2 class="split h2m">Dra. Mariane Botti e Dr. Loan Tomiello</h2>
+      <p data-r>A gente faz harmonização há mais de 6 anos e hoje conduz turmas em Porto Alegre e Florianópolis. Na mentoria a gente fica na sala com você, olhando cada ponto. E no webinário somos nós dois dando a aula ao vivo.</p>
+      <div class="igs" data-r>
+        <a class="link" href="https://www.instagram.com/marianebotti/" target="_blank" rel="noopener">@marianebotti</a>
+        <a class="link" href="https://www.instagram.com/loantomiello/" target="_blank" rel="noopener">@loantomiello</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grupo escuro">
+  <div class="wrap">
+    <div class="oferta" data-r>
+      <div class="of-esq">
+        <span class="selo">Webinário gratuito e ao vivo</span>
+        <h2 class="split">Como se tornar o profissional de harmonização que as pacientes <mark>procuram pelo nome</mark></h2>
+        <div class="of-data"><b>18 e 19 de novembro</b><span>quarta e quinta, às 20h, ao vivo</span></div>
+        <p class="of-p">Uma aula com a Dra. Mariane Botti e o Dr. Loan Tomiello, pra você decidir com calma se a mentoria é pra você.</p>
+        <a class="btn ouro" data-wa href="#"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero participar do webinário</a>
+        <div class="sub-cta">O link da aula sai no grupo do WhatsApp.</div>
+      </div>
+      <div class="of-dir">
+        <span class="of-t">O que a gente vai abrir na aula</span>
+        <ol class="of-l">
+          <li><b>A leitura de rosto que a gente faz antes de pegar na seringa,</b> mostrada em um caso real, do começo ao fim.</li>
+          <li><b>Os erros de marcação que mais aparecem em quem já aplica,</b> e como corrigir cada um.</li>
+          <li><b>Como apresentar o plano full face</b> pra paciente entender, confiar e fechar o plano inteiro.</li>
+          <li><b>O que fazer quando acontece uma intercorrência,</b> passo a passo, pra você aplicar tranquilo.</li>
+          <li><b>A conta da mentoria:</b> quantos procedimentos pagam o seu investimento.</li>
+          <li><b>A prática por dentro:</b> as pacientes, os produtos e o que você aplica com a gente do lado.</li>
+        </ol>
+        <p class="of-fim">No final a gente responde as suas perguntas ao vivo e passa as datas da próxima turma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <img src="img/logo-nos-completo.png" alt="NÓS Núcleo de Odontologia e Saúde">
+  <div class="wrap">Mentoria para profissionais habilitados pelo seu conselho de classe.</div>
+</footer>
+
+<a class="fab" data-wa href="#" aria-label="Entrar no grupo do WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span class="t">Webinário gratuito</span></a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47a9.4 9.4 0 0 1 6.7 2.78 9.4 9.4 0 0 1 2.77 6.7c0 5.23-4.25 9.48-9.47 9.48zM20.1 3.9A11.33 11.33 0 0 0 12.04.55C5.76.55.65 5.66.65 11.94c0 2.01.52 3.97 1.52 5.7L.55 23.5l6-1.57a11.36 11.36 0 0 0 5.48 1.4h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.18-5.9-3.33-8.05z"/></symbol>
+</svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* ===== CONFIGURAÇÃO: edite aqui ===== */
+const CONFIG = {
+  // Cole aqui o link de convite do grupo (https://chat.whatsapp.com/...).
+  // Enquanto estiver vazio, os botões abrem uma conversa com o número abaixo.
+  grupo: '',
+  whatsapp: '554884195309',
+  mensagem: 'Olá! Quero participar do webinário gratuito de harmonização facial'
+};
+/* =================================== */
+
+const destino = CONFIG.grupo || ('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(CONFIG.mensagem));
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = destino; a.target = '_blank'; a.rel = 'noopener'; });
+
+// rosto da abertura: marcação de caneta estilo editorial (coordenadas da foto original, 1024 de largura)
+const SETAS = [                                   // vetores de sustentação, com ponta de seta
+  'M585 330 Q615 255 700 222',                    // têmpora
+  'M402 700 Q392 640 368 588',                    // lateral do nariz
+  'M545 770 L598 668',                            // maçã do rosto
+  'M590 800 L643 698',
+  'M352 1012 Q530 1004 700 892'                   // mandíbula
+];
+const TRACEJADOS = ['M398 548 Q482 596 584 546', 'M126 562 Q186 592 252 566'];   // olheiras
+const ETIQUETAS = [                               // ponto no rosto, fim da linha, texto
+  {p:[330,428], f:[96,318],  t:'Simetria',  lado:'e'},
+  {p:[612,646], f:[842,596], t:'Proporção', lado:'d'},
+  {p:[540,992], f:[792,1086], t:'Contorno', lado:'d'}
+];
+const marca = document.getElementById('marca'), rostoEl = document.getElementById('rosto');
+const pctX = x => (x / 1024 * 100).toFixed(2), pctY = y => ((y - 40) / 1280 * 100).toFixed(2);
+marca.innerHTML =
+  '<defs><filter id="mao" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>' +
+  TRACEJADOS.map((d,i) => `<mask id="mk${i}" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1360"><path class="tr rev" d="${d}" style="stroke:#fff;stroke-width:26"/></mask>`).join('') + '</defs>' +
+  '<g class="caneta" filter="url(#mao)">' +
+  SETAS.map(d => `<path class="tr seta" d="${d}"/><path class="tr ponta" d=""/>`).join('') +
+  TRACEJADOS.map((d,i) => `<path class="trac" d="${d}" mask="url(#mk${i})"/>`).join('') +
+  '</g><g class="guias">' +
+  ETIQUETAS.map(e => `<line class="tr guia" x1="${e.p[0]}" y1="${e.p[1]}" x2="${e.f[0]}" y2="${e.f[1]}"/><circle class="pt" cx="${e.p[0]}" cy="${e.p[1]}" r="6"/>`).join('') +
+  '</g>';
+// ponta de cada seta, calculada pelo fim do traço
+marca.querySelectorAll('.seta').forEach(sh => {
+  const L = sh.getTotalLength(), a = sh.getPointAtLength(L), b = sh.getPointAtLength(L - 14);
+  const ang = Math.atan2(a.y - b.y, a.x - b.x), t = 30, ab = .5;
+  const p1 = [a.x - t*Math.cos(ang - ab), a.y - t*Math.sin(ang - ab)], p2 = [a.x - t*Math.cos(ang + ab), a.y - t*Math.sin(ang + ab)];
+  sh.nextElementSibling.setAttribute('d', `M${p1[0].toFixed(1)} ${p1[1].toFixed(1)} L${a.x.toFixed(1)} ${a.y.toFixed(1)} L${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`);
+});
+ETIQUETAS.forEach(e => rostoEl.insertAdjacentHTML('beforeend', `<span class="etq ${e.lado}" style="left:${pctX(e.f[0])}%;top:${pctY(e.f[1])}%">${e.t}</span>`));
+marca.querySelectorAll('.tr').forEach(t => { const L = t.getTotalLength(); t.style.strokeDasharray = L; t.dataset.len = L; });
+
+
+// depoimentos: tocam sozinhos sem som; ao ativar o som, o vídeo recomeça do início e os outros silenciam
+const deps = [...document.querySelectorAll('.dep')], depsPts = [...document.querySelectorAll('#depsPts i')];
+const calar = d => { const v = d.querySelector('video'), b = d.querySelector('.som'); v.muted = true; b.classList.remove('ligado'); b.querySelector('span').textContent = 'Ativar som'; };
+deps.forEach((d, i) => {
+  const v = d.querySelector('video'), b = d.querySelector('.som');
+  b.addEventListener('click', () => {
+    if (!v.muted) { calar(d); return; }
+    deps.forEach(o => o !== d && calar(o));
+    v.muted = false; v.currentTime = 0; v.play().catch(()=>{});
+    b.classList.add('ligado'); b.querySelector('span').textContent = 'Som ligado';
+  });
+  v.addEventListener('click', () => v.paused ? v.play() : v.pause());
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { v.play().catch(()=>{}); if (d.parentNode.id === 'deps') { const k = [...d.parentNode.children].indexOf(d); depsPts.forEach((p, j) => p.classList.toggle('on', j === k)); } }
+    else { v.pause(); if (!v.muted) calar(d); }
+  }), {threshold:.6}).observe(d);
+  else v.autoplay = true;
+});
+
+// topo e botão flutuante
+const fab = document.querySelector('.fab'), topBar = document.getElementById('top');
+function onScroll(){
+  const y = window.scrollY;
+  topBar.classList.toggle('scrolled', y > 20);
+  const nearEnd = (window.innerHeight + y) > document.body.scrollHeight - 500;
+  fab.classList.toggle('show', y > window.innerHeight * .6 && !nearEnd);
+}
+window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+// títulos em palavras (trecho em <mark> fica inteiro num bloco)
+document.querySelectorAll('.split').forEach(h => {
+  const words = [];
+  h.childNodes.forEach(n => {
+    if (n.nodeType === 3) n.textContent.split(/\s+/).forEach(t => { if (!t) return; /^[,.;:!?]/.test(t) && words.length ? (words[words.length-1].hl ? words[words.length-1].after = t : words[words.length-1].t += t) : words.push({t}); });
+    else words.push({t:n.textContent.trim(), hl:true});
+  });
+  h.innerHTML = '';
+  words.forEach((o,i) => {
+    const ln = document.createElement('span'); ln.className = 'ln' + (o.hl ? ' hl' : '');
+    const sp = document.createElement('span'); sp.textContent = o.t;
+    ln.appendChild(sp); h.appendChild(ln); if (o.after) h.appendChild(document.createTextNode(o.after)); if (i < words.length-1) h.appendChild(document.createTextNode(' '));
+  });
+});
+// narrativa: palavra por palavra; o trecho entre colchetes ganha o destaque dourado
+document.querySelectorAll('.words').forEach(p => {
+  let g = false;
+  p.innerHTML = p.textContent.trim().split(/\s+/).map(w => {
+    if (w.startsWith('[')) { g = true; w = w.slice(1); }
+    const fim = w.endsWith(']'); if (fim) w = w.slice(0,-1);
+    const html = `<span class="w${g ? ' g' : ''}">${w}</span>`; if (fim) g = false; return html;
+  }).join(' ');
+});
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!window.gsap || !window.ScrollTrigger || reduce) {
+  document.documentElement.classList.remove('js');
+  document.querySelectorAll('.story .w').forEach(w => w.style.opacity = 1);
+} else {
+  gsap.registerPlugin(ScrollTrigger);
+  if (window.Lenis && !matchMedia('(pointer:coarse)').matches) {
+    const lenis = new Lenis({duration:1.1});
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t*1000)); gsap.ticker.lagSmoothing(0);
+  }
+  const ease = 'expo.out';
+
+  gsap.timeline({delay:.1})
+    .to('.hero .split .ln > span', {y:0, duration:1.2, ease, stagger:.05})
+    .to('.hero [data-r]', {opacity:1, y:0, duration:.9, ease, stagger:.1}, .5);
+
+  // a caneta desenha a marcação, as etiquetas entram, tudo espera e recomeça
+  const zera = () => { gsap.set('#marca .tr', {strokeDashoffset:(i,el) => el.dataset.len}); gsap.set('#marca .pt', {scale:0, transformOrigin:'50% 50%'}); gsap.set('.etq', {opacity:0, y:6}); };
+  zera();
+  const tlm = gsap.timeline({delay:1.1, repeat:-1, repeatDelay:.5});
+  gsap.utils.toArray('#marca .seta').forEach((sh,i) => {
+    tlm.to(sh, {strokeDashoffset:0, duration:.7, ease:'power2.inOut'}, i ? '-=.25' : 0)
+       .to(sh.nextElementSibling, {strokeDashoffset:0, duration:.22, ease:'power1.out'}, '-=.05');
+  });
+  tlm.to('#marca .rev', {strokeDashoffset:0, duration:.9, ease:'power2.inOut', stagger:.2}, '-=.2')
+     .to('#marca .pt', {scale:1, duration:.35, ease:'back.out(3)', stagger:.25}, '-=.3')
+     .to('#marca .guia', {strokeDashoffset:0, duration:.6, ease:'power2.out', stagger:.25}, '<.1')
+     .to('.etq', {opacity:1, y:0, duration:.5, ease:'power2.out', stagger:.25}, '<.35')
+     .to(['#marca .caneta', '#marca .guias', '.etq'], {opacity:0, duration:.9, ease:'power2.in'}, '+=5')
+     .add(zera)
+     .set(['#marca .caneta', '#marca .guias'], {opacity:1});
+
+  document.querySelectorAll('.split').forEach(h => {
+    if (h.closest('.hero')) return;
+    gsap.to(h.querySelectorAll('.ln > span'), {y:0, duration:1.1, ease, stagger:.05, scrollTrigger:{trigger:h, start:'top 88%'}});
+  });
+
+  ScrollTrigger.batch(document.querySelectorAll('[data-r]:not(.hero [data-r])'), {
+    start:'top 92%', onEnter: b => gsap.to(b, {opacity:1, y:0, duration:.9, ease, stagger:.08, overwrite:true})
+  });
+
+  // cada parágrafo da narrativa acende conforme o scroll
+  document.querySelectorAll('.words').forEach(p => {
+    gsap.to(p.querySelectorAll('.w'), {opacity:1, stagger:.08, ease:'none',
+      scrollTrigger:{trigger:p, start:'top 78%', end:'bottom 52%', scrub:true}});
+  });
+
+  document.querySelectorAll('[data-clip]').forEach(el => {
+    gsap.to(el, {clipPath:'inset(0% 0 0 0 round 14px)', duration:1.4, ease:'expo.inOut', scrollTrigger:{trigger:el, start:'top 82%'}});
+  });
+  document.querySelectorAll('[data-par]').forEach(img => {
+    const k = +img.dataset.par;
+    gsap.fromTo(img, {yPercent:-k/2}, {yPercent:k/2, ease:'none', scrollTrigger:{trigger:img.parentElement, start:'top bottom', end:'bottom top', scrub:true}});
+  });
+
+  gsap.from('.of-l li', {opacity:0, x:24, duration:.8, ease:'expo.out', stagger:.1, scrollTrigger:{trigger:'.of-l', start:'top 82%'}});
+  window.addEventListener('load', () => ScrollTrigger.refresh());
+}
+window.__motionOk = true;
+</script>
+</body>
+</html>
